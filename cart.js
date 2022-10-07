@@ -36,6 +36,10 @@ const cart = [
 //CODE HERE
 const sepPrice = cart.map(objNum => objNum.price)
 const summedPrice = sepPrice.reduce((acc, curr) => acc + curr)
+
+// const summedPrice = sepPrice.reduce((acc, curr) => {
+//     return acc + curr.price}, 0)
+
 console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
@@ -83,13 +87,13 @@ console.log(calcFinalPrice(200, 2, .05))
     TEXT ANSWER HERE
     A customer would have A money amount, A recommended item, A placed order, and a location
 
-
+        money:
     The customer needs a certain amount of money to order something
-
-    the customer sometimes needs reccommendations to know what to buy
-    
+    name:
+    the customer needs a name to match the order
+    order:
     The customer can order something on the website
-
+    location:
     The customer  needs to be delivered the order somehow
 
 
@@ -103,7 +107,7 @@ console.log(calcFinalPrice(200, 2, .05))
 
 const customer = {
     money: 130.78,
-    reccommendation: 'Shoes',
-    order: 'Jacket',
+    name: 'phil',
+    order: 'Sandwich',
     Location: '1763 N Arroyo park, New hampshire'
 }
